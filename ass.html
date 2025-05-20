@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>
+            section A.I......
+      push()....it adds one or more element to the end of an array and returns the new lenth of array
+      pop()...it removes the last element from an arrayAND returnsTHAT element.  
+    </p>
+    </div>
+    
+
+<div>
+    <p>
+        section A.III....
+        find element gives the first element in the array once it meet the first answer neglecting other answers.
+    </p>
+</div>
+
+<div>
+    SECTION B
+    - If: The if statement is used to execute a block of code if a certain condition is true.<br>
+- Else If: The else if statement is used to check another condition if the initial condition is false.<br>
+- Else: The else statement is used to execute a block of code if all conditions are false<br>
+
+<strong>-A switch statement is used to perform different actions based on different values of a variable.
+</strong>X
+<br>
+
+- == (Equal): Checks if two values are equal.<br>
+- === (Strict Equal): Checks if two values are equal and of the same data type.<br>
+- != (Not Equal): Checks if two values are not equal.<br>
+- !== (Strict Not Equal): Checks if two values are not equal or not of the same data type.<br>
+- > (Greater Than): Checks if one value is greater than another.<br>
+- < (Less Than): Checks if one value is less than another.<br>
+
+<br>
+-function in JavaScript is a block of code that can be executed multiple times with different inputs<br>
+it is  define using the function keyword or arrow function syntax.
+
+
+</div>
+    <script>
+    //   push() example
+
+    let cars = ["micra","toyota"];
+    cars.push("benz");
+    console.log(cars); 
+    
+
+
+        // pop example
+
+        let numbers =[5,6,7,8]
+        let poppedNumber = numbers.pop();
+        console.log(numbers);
+
+
+        // filter
+
+        let number = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+        console.log(number.filter((x) => x%2 ===0));
+
+
+        // find example
+
+        let numeric =[2,6,4,8,0,2,13,56,78]
+        let numericData = numeric.find(num => num > 10)
+        console.log(numericData)
+
+
+        // IF EXAMPLE
+        let num = 5;
+if (num > 0) {
+  console.log("The number is positive.");
+} else if (num < 0) {
+  console.log("The number is negative.");
+} else {
+  console.log("The number is zero.");
+}
+
+
+// switch statement example
+
+let day = "Monday";
+switch (day) {
+  case "Monday":
+    console.log("Today is Monday.");
+    break;
+  case "Tuesday":
+    console.log("Today is Tuesday.");
+    break;
+  case "Wednesday":
+    console.log("Today is Wednesday.");
+    break;
+}
+
+
+// comparison operators
+
+console.log(5 == "5"); 
+console.log(5 === "5"); 
+console.log(5 != 3); 
+console.log(5 > 3); 
+console.log(5 < 3); 
+
+
+// Greet User Function
+
+function greet(name) {
+            console.log("Hello "+ name);   
+        }
+
+        greet("tom");
+
+
+
+        function calculateProduct(num1, num2) {
+  return num1 * num2;
+}
+let product = calculateProduct(4, 5);
+console.log(product);
+
+
+    </script>
+</body>
+</html>
